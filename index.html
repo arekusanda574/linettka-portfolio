@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Linettka — професійний фотограф. Портретна, сімейна та подієва фотозйомка. Бронюйте вашу зйомку вже зараз.">
+  <meta name="keywords" content="фотограф, портрет, фотозйомка, сімейна фотосесія, лав сторі, linettka">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Linettka — Фотограф">
+  <meta property="og:description" content="Професійна портретна, сімейна та подієва фотозйомка">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/main/IMG_4114.JPG">
+
+  <title>Linettka — Фотограф</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css?v=4">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="images/main/IMG_4114.webp" fetchpriority="high">
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__text">linettka</div>
+    <div class="loader__bar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">linettka <span>photography</span></a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#hero" class="nav__link is-active" data-section="hero">Головна</a></li>
+        <li><a href="#portfolio" class="nav__link" data-section="portfolio">Портфоліо</a></li>
+        <li><a href="#about" class="nav__link" data-section="about">Про мене</a></li>
+        <li><a href="#pricing" class="nav__link" data-section="pricing">Прайс</a></li>
+        <li><a href="#contact" class="nav__link" data-section="contact">Контакти</a></li>
+      </ul>
+
+      <button class="nav__burger" id="navBurger" aria-label="Меню навігації">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__image-wrapper">
+      <img class="hero__image" src="images/main/IMG_4114.webp" alt="Портретна фотографія від Ліни Кушнір" width="4000"
+        height="3000" fetchpriority="high" loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">linettka</h1>
+      <p class="hero__subtitle">Портретна та подієва фотографія</p>
+    </div>
+    <div class="hero__scroll-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="section portfolio" id="portfolio">
+    <div class="section__header fade-in">
+      <h2 class="section__title">Портфоліо</h2>
+      <div class="section__divider"></div>
+      <p class="section__subtitle">Кожна зйомка — це унікальна історія, розказана через світло та емоції</p>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="gallery__filters fade-in" id="galleryFilters">
+      <button class="gallery__filter-btn is-active" data-filter="all">Всі</button>
+      <button class="gallery__filter-btn" data-filter="studio">Студія</button>
+      <button class="gallery__filter-btn" data-filter="outdoor">Заобрій</button>
+      <button class="gallery__filter-btn" data-filter="couple">Пари</button>
+      <button class="gallery__filter-btn" data-filter="event">Події</button>
+    </div>
+
+    <!-- Horizontal Gallery -->
+    <div class="gallery__wrapper">
+      <div class="gallery__track" id="galleryTrack">
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+          <img src="images/thumbs/event/img_bot_20260729_153551.webp" data-src="images/optimized/event/img_bot_20260729_153551.webp"
+            alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+
+
+
+
+        <!-- Reordered gallery items alternating categories and spreading B&W -->
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_6421.webp" data-src="images/optimized/studio/img_6421.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4153.webp" data-src="images/optimized/outdoor/img_4153.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="couple">
+        <img src="images/thumbs/couple/img_4112.webp" data-src="images/optimized/couple/img_4112.webp"
+        alt="Фото пари" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_3467.webp" data-src="images/optimized/event/img_3467.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_4088.webp" data-src="images/optimized/studio/img_4088.webp"
+        alt="Студійний портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4119.webp" data-src="images/optimized/outdoor/img_4119.webp"
+        alt="Портрет на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4114.webp" data-src="images/optimized/outdoor/img_4114.webp"
+        alt="Заобрій" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_3414.webp" data-src="images/optimized/event/img_3414.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_4093.webp" data-src="images/optimized/studio/img_4093.webp"
+        alt="Студійний портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8665.webp" data-src="images/optimized/outdoor/img_8665.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="couple">
+        <img src="images/thumbs/couple/img_4113.webp" data-src="images/optimized/couple/img_4113.webp"
+        alt="Фото пари" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_4282.webp" data-src="images/optimized/event/img_4282.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_1021.webp" data-src="images/optimized/studio/img_1021.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_5004.webp" data-src="images/optimized/outdoor/img_5004.webp"
+        alt="Зйомка на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="couple">
+        <img src="images/thumbs/couple/img_4350.webp" data-src="images/optimized/couple/img_4350.webp"
+        alt="Фото пари" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_3572.webp" data-src="images/optimized/event/img_3572.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_1015.webp" data-src="images/optimized/studio/img_1015.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4150.webp" data-src="images/optimized/outdoor/img_4150.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="couple">
+        <img src="images/thumbs/couple/img_4341.webp" data-src="images/optimized/couple/img_4341.webp"
+        alt="Фото пари" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_3374.webp" data-src="images/optimized/event/img_3374.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_4337.webp" data-src="images/optimized/studio/img_4337.webp"
+        alt="Студійний портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4330.webp" data-src="images/optimized/outdoor/img_4330.webp"
+        alt="Портрет на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="couple">
+        <img src="images/thumbs/couple/img_4356.webp" data-src="images/optimized/couple/img_4356.webp"
+        alt="Фото пари" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_3473.webp" data-src="images/optimized/event/img_3473.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_3024.webp" data-src="images/optimized/studio/img_3024.webp"
+        alt="Студійний портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8561.webp" data-src="images/optimized/outdoor/img_8561.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_3380.webp" data-src="images/optimized/event/img_3380.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_6025.webp" data-src="images/optimized/studio/img_6025.webp"
+        alt="Лав сторі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4326.webp" data-src="images/optimized/outdoor/img_4326.webp"
+        alt="Портрет на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_4115.webp" data-src="images/optimized/studio/img_4115.webp"
+        alt="Студійний портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8674.webp" data-src="images/optimized/outdoor/img_8674.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_7976.webp" data-src="images/optimized/studio/img_7976.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8577.webp" data-src="images/optimized/outdoor/img_8577.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="couple">
+        <img src="images/thumbs/couple/img_4344.webp" data-src="images/optimized/couple/img_4344.webp"
+        alt="Фото пари" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_7971.webp" data-src="images/optimized/studio/img_7971.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4146.webp" data-src="images/optimized/outdoor/img_4146.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="couple">
+        <img src="images/thumbs/couple/img_4348.webp" data-src="images/optimized/couple/img_4348.webp"
+        alt="Фото пари" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_1018.webp" data-src="images/optimized/studio/img_1018.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_5003.webp" data-src="images/optimized/outdoor/img_5003.webp"
+        alt="Зйомка на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_4296.webp" data-src="images/optimized/event/img_4296.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_8350.webp" data-src="images/optimized/studio/img_8350.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8628.webp" data-src="images/optimized/outdoor/img_8628.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_3466.webp" data-src="images/optimized/event/img_3466.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_4130.webp" data-src="images/optimized/studio/img_4130.webp"
+        alt="Студійний портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4151.webp" data-src="images/optimized/outdoor/img_4151.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_3406.webp" data-src="images/optimized/event/img_3406.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_6422.webp" data-src="images/optimized/studio/img_6422.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4944.webp" data-src="images/optimized/outdoor/img_4944.webp"
+        alt="Зйомка на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_4294.webp" data-src="images/optimized/event/img_4294.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_3682.webp" data-src="images/optimized/studio/img_3682.webp"
+        alt="Студійний портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_5002.webp" data-src="images/optimized/outdoor/img_5002.webp"
+        alt="Зйомка на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_3375.webp" data-src="images/optimized/event/img_3375.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_1022.webp" data-src="images/optimized/studio/img_1022.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_5006.webp" data-src="images/optimized/outdoor/img_5006.webp"
+        alt="Зйомка на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="event">
+        <img src="images/thumbs/event/img_3462.webp" data-src="images/optimized/event/img_3462.webp"
+        alt="Подія" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_1013.webp" data-src="images/optimized/studio/img_1013.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8682.webp" data-src="images/optimized/outdoor/img_8682.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_6006.webp" data-src="images/optimized/studio/img_6006.webp"
+        alt="Лав сторі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8548.webp" data-src="images/optimized/outdoor/img_8548.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_4238.webp" data-src="images/optimized/studio/img_4238.webp"
+        alt="Студійний портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8618.webp" data-src="images/optimized/outdoor/img_8618.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_3677.webp" data-src="images/optimized/studio/img_3677.webp"
+        alt="Студійний портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4333.webp" data-src="images/optimized/outdoor/img_4333.webp"
+        alt="Портрет на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_6023.webp" data-src="images/optimized/studio/img_6023.webp"
+        alt="Лав сторі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8685.webp" data-src="images/optimized/outdoor/img_8685.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_4500.webp" data-src="images/optimized/studio/img_4500.webp"
+        alt="Студійний портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8569.webp" data-src="images/optimized/outdoor/img_8569.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_6423.webp" data-src="images/optimized/studio/img_6423.webp"
+        alt="Портрет" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4331.webp" data-src="images/optimized/outdoor/img_4331.webp"
+        alt="Портрет на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_6010.webp" data-src="images/optimized/studio/img_6010.webp"
+        alt="Лав сторі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4336.webp" data-src="images/optimized/outdoor/img_4336.webp"
+        alt="Портрет на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8558.webp" data-src="images/optimized/outdoor/img_8558.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="studio">
+        <img src="images/thumbs/studio/img_6016.webp" data-src="images/optimized/studio/img_6016.webp"
+        alt="Лав сторі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4328.webp" data-src="images/optimized/outdoor/img_4328.webp"
+        alt="Портрет на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_5007.webp" data-src="images/optimized/outdoor/img_5007.webp"
+        alt="Зйомка на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4329.webp" data-src="images/optimized/outdoor/img_4329.webp"
+        alt="Портрет на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4332.webp" data-src="images/optimized/outdoor/img_4332.webp"
+        alt="Портрет на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4147.webp" data-src="images/optimized/outdoor/img_4147.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8582.webp" data-src="images/optimized/outdoor/img_8582.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4999.webp" data-src="images/optimized/outdoor/img_4999.webp"
+        alt="Зйомка на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8578.webp" data-src="images/optimized/outdoor/img_8578.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8568.webp" data-src="images/optimized/outdoor/img_8568.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4483.webp" data-src="images/optimized/outdoor/img_4483.webp"
+        alt="Портрет на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4997.webp" data-src="images/optimized/outdoor/img_4997.webp"
+        alt="Зйомка на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4958.webp" data-src="images/optimized/outdoor/img_4958.webp"
+        alt="Зйомка на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_4956.webp" data-src="images/optimized/outdoor/img_4956.webp"
+        alt="Зйомка на природі" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8565.webp" data-src="images/optimized/outdoor/img_8565.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+        <div class="gallery__item gallery__item--portrait" data-category="outdoor">
+        <img src="images/thumbs/outdoor/img_8576.webp" data-src="images/optimized/outdoor/img_8576.webp"
+        alt="Зйомка на вулиці" loading="lazy" width="600" height="800">
+        </div>
+</div>
+
+      <!-- Gallery Navigation -->
+      <button class="gallery__nav gallery__nav--prev" id="galleryPrev" aria-label="Попередні фото">
+        <svg viewBox="0 0 24 24">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
+      <button class="gallery__nav gallery__nav--next" id="galleryNext" aria-label="Наступні фото">
+        <svg viewBox="0 0 24 24">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="gallery__counter fade-in" id="galleryCounter"></div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="about__container">
+      <div class="about__image-wrapper fade-in">
+        <img class="about__image" src="images/lina/lina.webp" alt="Ліна Кушнір — фотограф" loading="lazy" width="600"
+          height="800">
+      </div>
+      <div class="about__content fade-in">
+        <h2 class="section__title">Привіт, я — Ліна</h2>
+        <div class="section__divider"></div>
+        <p class="about__text">
+          Фотографія для мене — це мова, якою я розповідаю історії. Кожна зйомка — це не просто кадри, а справжні
+          емоції, зафіксовані у світлі.
+        </p>
+        <p class="about__text">
+          Я вірю, що кожна людина прекрасна по-своєму, і моя мета — показати цю красу через об'єктив. Будь то ніжний
+          портрет, щаслива родина чи важлива подія вашого життя — я створю знімки, які ви захочете передивлятися знову і
+          знову.
+        </p>
+        <p class="about__text">
+          Під час зйомки я завжди допомагаю з позуванням, підбираю найкращі ракурси та створюю атмосферу, в якій ви
+          зможете бути собою. Бо найкращі фото народжуються тоді, коли ви відчуваєте себе вільно.
+        </p>
+        <a href="https://ig.me/m/linettka_ph" target="_blank" rel="noopener noreferrer" class="about__instagram">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg>
+          @linettka_ph
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section__header fade-in">
+        <h2 class="section__title">ПРАЙС</h2>
+        <div class="section__divider"></div>
+      </div>
+
+      <!-- Pricing List Tabs -->
+      <div class="pricing__sketch-wrap fade-in">
+        <div class="pricing__sketch-card" id="pricingTabs">
+          <button type="button" class="pricing__tab-btn is-active" data-pricing-tab="individual">
+            <span>Індивідуальна зйомка</span>
+            <svg class="pricing__tab-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+
+          <button type="button" class="pricing__tab-btn" data-pricing-tab="family">
+            <span>Сімейна зйомка</span>
+            <svg class="pricing__tab-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+
+          <button type="button" class="pricing__tab-btn" data-pricing-tab="events">
+            <span>Зйомка подій</span>
+            <svg class="pricing__tab-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Expandable Pricing Detail Cards Container -->
+      <div class="pricing__details-container fade-in" id="pricingDetailsContainer">
+        <!-- 1. Individual Shoot Details (Active) -->
+        <div class="pricing__detail-card is-active" id="pricingDetail-individual">
+          <div class="pricing__detail-image-wrap">
+            <img src="images/optimized/outdoor/img_4326.webp" alt="Індивідуальна зйомка" loading="lazy" width="600" height="750" class="pricing__detail-img">
+          </div>
+
+          <div class="pricing__detail-body">
+            <h3 class="pricing__detail-title">ІНДИВІДУАЛЬНА ЗЙОМКА</h3>
+
+            <div class="pricing__detail-price-box">
+              <span class="pricing__detail-price-val">2 000</span>
+              <span class="pricing__detail-price-unit">грн/година</span>
+            </div>
+
+            <div class="pricing__detail-includes-header">
+              <span class="pricing__detail-includes-label">ЩО ВХОДИТЬ У ВАРТІСТЬ</span>
+            </div>
+
+            <div class="pricing__detail-features-grid">
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ВІД 60 ФОТО В РЕТУШІ ТА ОБРОБЦІ</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <polyline points="12 6 12 12 15 15"></polyline>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ВІДДАЧА ФОТО ВІД 2 ДО 5 РОБОЧИХ ДНІВ</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                    <path d="M22 8l-6 4 6 4V8z"></path>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">КОРОТЕНЬКЕ ВІДЕО НА КАМЕРУ (БЕКСТЕЙДЖ)</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 21s-8-7.5-8-12a8 8 0 1 1 16 0c0 4.5-8 12-8 12z"></path>
+                    <circle cx="12" cy="9" r="3"></circle>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ПОПЕРЕДНІЙ ПІДБІР ЛОКАЦІЇ ТА ОБРАЗУ</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ДОПОМОГА З ПОЗУВАННЯМ</span>
+              </div>
+            </div>
+
+            <div class="pricing__detail-badge-box">
+              <span class="pricing__detail-badge-text">ЗБЕРІГАЮ ВАЖЛИВЕ. СТВОРЮЮ СПОГАДИ.</span>
+              <span class="pricing__detail-badge-heart">♡</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Family / Love Story Shoot Details -->
+        <div class="pricing__detail-card" id="pricingDetail-family">
+          <div class="pricing__detail-image-wrap">
+            <img src="images/optimized/couple/love.webp" alt="Сімейна / Love Story зйомка" loading="lazy" width="600" height="750" class="pricing__detail-img">
+          </div>
+
+          <div class="pricing__detail-body">
+            <h3 class="pricing__detail-title">СІМЕЙНА / LOVE STORY<br>ЗЙОМКА</h3>
+
+            <div class="pricing__detail-price-box">
+              <span class="pricing__detail-price-val">2 200</span>
+              <span class="pricing__detail-price-unit">грн/година</span>
+            </div>
+
+            <div class="pricing__detail-includes-header">
+              <span class="pricing__detail-includes-label">ЩО ВХОДИТЬ У ВАРТІСТЬ</span>
+            </div>
+
+            <div class="pricing__detail-features-grid">
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ВІД 60 ФОТО В РЕТУШІ ТА ОБРОБЦІ</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <polyline points="12 6 12 12 15 15"></polyline>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ВІДДАЧА ФОТО ВІД 2 ДО 5 РОБОЧИХ ДНІВ</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                    <path d="M22 8l-6 4 6 4V8z"></path>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">КОРОТЕНЬКЕ ВІДЕО НА КАМЕРУ (БЕКСТЕЙДЖ)</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 21s-8-7.5-8-12a8 8 0 1 1 16 0c0 4.5-8 12-8 12z"></path>
+                    <circle cx="12" cy="9" r="3"></circle>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ПОПЕРЕДНІЙ ПІДБІР ЛОКАЦІЇ ТА ОБРАЗУ</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ДОПОМОГА З ПОЗУВАННЯМ</span>
+              </div>
+            </div>
+
+            <div class="pricing__detail-badge-box">
+              <span class="pricing__detail-badge-text">ЗБЕРІГАЮ ВАЖЛИВЕ. СТВОРЮЮ СПОГАДИ.</span>
+              <span class="pricing__detail-badge-heart">♡</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Events Shoot Details -->
+        <div class="pricing__detail-card" id="pricingDetail-events">
+          <div class="pricing__detail-image-wrap">
+            <img src="images/optimized/event/podii.webp" alt="Зйомка подій" loading="lazy" width="600" height="750" class="pricing__detail-img">
+          </div>
+
+          <div class="pricing__detail-body">
+            <h3 class="pricing__detail-title">ЗЙОМКА ПОДІЙ</h3>
+            <p class="pricing__detail-subtitle">РОЗПИС/ВІНЧАННЯ/ХРЕЩЕННЯ</p>
+
+            <div class="pricing__detail-price-box">
+              <span class="pricing__detail-price-val">2 500</span>
+              <span class="pricing__detail-price-unit">грн/година</span>
+            </div>
+
+            <div class="pricing__detail-includes-header">
+              <span class="pricing__detail-includes-label">ЩО ВХОДИТЬ У ВАРТІСТЬ</span>
+            </div>
+
+            <div class="pricing__detail-features-grid">
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ВІД 60 ФОТО В РЕТУШІ ТА ОБРОБЦІ</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <polyline points="12 6 12 12 15 15"></polyline>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ВІДДАЧА ФОТО ВІД 2 ДО 5 РОБОЧИХ ДНІВ</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                    <path d="M22 8l-6 4 6 4V8z"></path>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">КОРОТЕНЬКЕ ВІДЕО НА КАМЕРУ (БЕКСТЕЙДЖ)</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 21s-8-7.5-8-12a8 8 0 1 1 16 0c0 4.5-8 12-8 12z"></path>
+                    <circle cx="12" cy="9" r="3"></circle>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ПОПЕРЕДНІЙ ПІДБІР ЛОКАЦІЇ ТА ОБРАЗУ</span>
+              </div>
+
+              <div class="pricing__detail-feature-item">
+                <div class="pricing__detail-feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </div>
+                <span class="pricing__detail-feature-text">ДОПОМОГА З ПОЗУВАННЯМ</span>
+              </div>
+            </div>
+
+            <div class="pricing__detail-badge-box">
+              <span class="pricing__detail-badge-text">ЗБЕРІГАЮ ВАЖЛИВЕ. СТВОРЮЮ СПОГАДИ.</span>
+              <span class="pricing__detail-badge-heart">♡</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header fade-in">
+        <h2 class="section__title">Контакти</h2>
+        <div class="section__divider"></div>
+      </div>
+      <p class="contact__cta fade-in">Готові створити ваші найкращі знімки?</p>
+      <div class="fade-in" style="text-align: center;">
+        <a href="https://ig.me/m/linettka_ph" target="_blank" rel="noopener noreferrer" class="contact__link"
+          id="instagramLink">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+          </svg>
+          Забронювати зйомку
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__text">© 2026 linettka photography. Усі права захищені.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Перегляд фото">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрити">
+      <svg viewBox="0 0 24 24">
+        <path d="M18 6L6 18M6 6l12 12" />
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Попереднє фото">
+      <svg viewBox="0 0 24 24">
+        <path d="M15 18l-6-6 6-6" />
+      </svg>
+    </button>
+    <div class="lightbox__image-wrapper">
+      <img class="lightbox__image" id="lightboxImage" src="" alt="Повноекранний перегляд фото">
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Наступне фото">
+      <svg viewBox="0 0 24 24">
+        <path d="M9 18l6-6-6-6" />
+      </svg>
+    </button>
+    <div class="lightbox__counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+      <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+    </svg>
+    <span id="toastText">Текст копіюється...</span>
+  </div>
+
+  <script src="script.js?v=2"></script>
+</body>
+
+</html>
